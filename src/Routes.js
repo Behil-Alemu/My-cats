@@ -1,23 +1,25 @@
 import React from 'react';
-import { Route, Switch, Redirect } from "react-router-dom";
-import DogList from './DogList'
-import FilterDogDetails from './FilterDogDetails'
+import { Route, Navigate, Routes} from "react-router-dom";
+import CatList from './CatList'
+import FilterCatDetails from './FilterCatDetails'
 
-function Routes({dogs}) {
+function routes({cats}) {
 	return (
-		<Switch>
-			<Route exact path="/dogs">
-				<DogList props={dogs}/> 
+		<Routes>
+			<Route exact path="/cats"
+				element={<CatList props={cats}/>} 
 
-			</Route>
-			<Route path="/dogs/:name">
-            <FilterDogDetails dogs={dogs} />
+		/>
 
-			</Route>
-			<Redirect to="/dogs" />
-		</Switch>
+
+			<Route path="/cats/:name"
+            element={<FilterCatDetails cats={cats} />}
+		/>
+			<Route path="/" element={<Navigate to="/cats" />}
+		/>
+		</Routes>
 
 	);
     
 }
-export default Routes;
+export default routes;

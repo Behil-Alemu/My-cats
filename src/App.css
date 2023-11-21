@@ -36,3 +36,138 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  background-color: #FFD700; 
+  color: #333; 
+  padding: 15px 10px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+nav a {
+  color: #333; 
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold; 
+  transition: transform 0.3s ease; 
+}
+
+nav a:hover {
+  color: #FF6347;
+  transform: scale(1.1); 
+}
+.nav-home {
+      background-color: "#FFD700";
+      padding: "8px 12px";
+      border-radius: "5px";
+      margin-right: "10px";
+      text-decoration: "none";
+      color: "#333", 
+}
+
+h1 {
+  color: rgb(231, 224, 167);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.cat-card {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  background-color: #FFD700; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px); 
+}
+
+
+.cat-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+
+.cat-name {
+  color: #333; 
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cat-name a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.cat-name a:hover {
+  color: #FF6347;
+}
+
+
+.filtered-cat-details {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  background-color: #FFD700; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.filtered-cat-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.filtered-cat-details h2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8em; 
+}
+
+.filtered-cat-details h3 {
+  color: #333; 
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.filtered-cat-details ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+.filtered-cat-details ul li {
+  color: #333; 
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.filtered-cat-details a {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.filtered-cat-details a:hover {
+  color: #FF6347; 
+}
+
+
+
